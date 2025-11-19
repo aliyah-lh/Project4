@@ -1,0 +1,222 @@
+.body {
+  padding: 0;
+  background-color: #F3F3F3;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  background-color: white;
+}
+.header__logo {
+  width: 162px;
+  height: 44px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  height: 50px;
+  background: #EAEAEA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.location__icon {
+  font-size: 20px;
+  color: #000;
+}
+.location__text {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 40px 0;
+}
+.menu-section__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  color: #000;
+}
+.menu-section__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  color: #555;
+}
+.menu-section__button {
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.functionality {
+  padding: 20px;
+}
+.functionality__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+.functionality__button {
+  width: 322.49px;
+  height: 72.38px;
+  background-color: #F6F6F6;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  padding-left: 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  position: relative;
+}
+.functionality__button i {
+  font-size: 20px;
+  color: #7E7E7E;
+  transition: color 0.3s ease;
+}
+.functionality__button:hover i {
+  color: #9356DC;
+}
+.functionality__step {
+  width: 24px;
+  height: 24px;
+  background-color: rgb(147, 86, 220);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -12px;
+}
+
+.restaurants {
+  margin-top: 127px;
+  padding: 0 20px;
+}
+.restaurants h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.restaurants article {
+  width: 340px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  position: relative;
+}
+.restaurants article img {
+  width: 100%;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants article .card-content {
+  height: 77px;
+  padding: 12px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.restaurants article h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  width: 267px;
+  height: 20px;
+  margin: 0;
+}
+.restaurants article h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  width: 247px;
+  height: 24px;
+  margin: 5px 0 0 0;
+}
+.restaurants article i {
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+  top: 210px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.restaurants article i:hover {
+  color: #9356DC;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #353535;
+}
+.footer img {
+  width: 100px;
+  height: 27px;
+  filter: brightness(0) invert(1);
+}
+.footer .footer__link {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+}
+.footer .footer__link i {
+  font-size: 16px;
+}
+.footer .footer__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
