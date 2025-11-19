@@ -1,6 +1,7 @@
 
-.body {
+body {
   padding: 0;
+  margin: 0;
   background-color: #F3F3F3;
 }
 
@@ -88,6 +89,12 @@
 
 .functionality {
   padding: 20px; 
+  background-color: white;
+  padding-bottom: 60px;
+
+  &__espace {
+    padding-left: 10px; 
+  }
 
   &__title {
     font-family: "Roboto", sans-serif;
@@ -144,8 +151,7 @@
 }
 
 .restaurants {
-  margin-top: 127px;
-  padding: 0 20px;
+  padding:54px 20px;
 
   h1 {
     font-family: "Roboto", sans-serif;
@@ -231,6 +237,7 @@
     font-weight: 500;
     font-size: 12px;
     cursor: pointer;
+    margin: 0;
 
     i {
       font-size: 16px;
@@ -242,6 +249,7 @@
     font-weight: 400;
     font-size: 16px;
     color: white;
+    margin: 0;
     
   }
 }
