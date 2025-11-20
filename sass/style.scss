@@ -156,98 +156,72 @@ body {
 
 }
 
-.restaurants {
-  padding: 54px 20px;
-  display: flex;
-  flex-direction: column;
+.restaurant-card {
+  width: 340px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  position: relative;
 
-  &__espace {
+  &__image {
+    width: 100%;
+    height: 174px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .card-content {
+    height: 77px;
+    padding: 0px 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
-  h1 {
+  h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin: 0;
   }
 
-  .restaurants__new {
-  width: 80px;
-  height: 25px;
-  background-color: #99E2D0;
-  color: #008766;
-  border-radius: 2px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 5px 0 0 0;
+  }
+
+  .heart {
   position: absolute;
-  top: 13px;
-  right: 12px;
-  z-index: 10;
-}
-
-
-  article {
-    width: 340px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-bottom: 25px;
-    position: relative;
-
-    img {
-      width: 100%;
-      height: 174px;
-      object-fit: cover;
-      border-radius: 15px 15px 0 0;
-    }
-
-    .card-content {
-      height: 77px;
-      padding: 0px 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    h2 {
-      font-family: "Roboto", sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      width: 267px;
-      height: 20px;
-      margin: 0;
-    }
-
-    h3 {
-      font-family: "Roboto", sans-serif;
-      font-weight: 300;
-      font-size: 16px;
-      width: 247px;
-      height: 24px;
-      margin: 5px 0 0 0;
-    }
-
-    i {
-      font-size: 25px;
-      position: absolute;
-      right: 20px;
-      top: 200px;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-
-    i:hover {
-      color: #9356DC;
-    }
+  right: 20px;
+  top: 200px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+  }
+  .heart-full {
+    opacity: 0;
+  }
+  input:checked ~ .heart-full {
+    opacity: 1;
+  }
+  input:checked ~ .heart-empty {
+    opacity: 0;
   }
 }
+
 
 .footer {
   padding: 20px;
@@ -292,4 +266,5 @@ body {
     padding-bottom: 7px;
 
   }
+}
 }
