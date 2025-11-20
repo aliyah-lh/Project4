@@ -174,6 +174,25 @@ body {
     margin-bottom: 20px;
   }
 
+  .restaurants__new {
+  width: 80px;
+  height: 25px;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  z-index: 10;
+}
+
+
   article {
     width: 340px;
     background-color: #ffffff;
