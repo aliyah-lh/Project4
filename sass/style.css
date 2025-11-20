@@ -82,15 +82,20 @@ body {
   padding: 20px;
   background-color: white;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 .functionality__espace {
-  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .functionality__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: #000;
+  text-align: left;
 }
 .functionality__button {
   width: 322.49px;
@@ -137,6 +142,13 @@ body {
 
 .restaurants {
   padding: 54px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants__espace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .restaurants h1 {
   font-family: "Roboto", sans-serif;
@@ -161,7 +173,7 @@ body {
 }
 .restaurants article .card-content {
   height: 77px;
-  padding: 12px 15px;
+  padding: 0px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +198,7 @@ body {
   font-size: 25px;
   position: absolute;
   right: 20px;
-  top: 210px;
+  top: 200px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -205,6 +217,10 @@ body {
   width: 100px;
   height: 27px;
   filter: brightness(0) invert(1);
+  padding-bottom: 18px;
+}
+.footer h2 {
+  margin: 7px 0;
 }
 .footer .footer__link {
   display: flex;
@@ -223,7 +239,8 @@ body {
 .footer .footer__text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   margin: 0;
+  padding-bottom: 7px;
 }/*# sourceMappingURL=style.css.map */
