@@ -260,4 +260,33 @@ body {
   color: white;
   margin: 0;
   padding-bottom: 7px;
+}
+
+@media (min-width: 1024px) {
+  .location {
+    box-shadow: none;
+  }
+  .menu-section__title {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .functionality__espace {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 26px;
+  }
+  .functionality__title {
+    padding-bottom: 25px;
+  }
+  .restaurants__espace {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants__position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
