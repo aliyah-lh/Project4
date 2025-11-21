@@ -79,7 +79,7 @@ body {
 }
 
 .functionality {
-  padding: 20px;
+  padding: 20px 180px;
   background-color: white;
   padding-bottom: 60px;
   display: flex;
@@ -141,9 +141,10 @@ body {
 }
 
 .restaurants {
-  padding: 54px 20px;
+  padding: 54px 180px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .restaurants__espace {
   display: flex;
@@ -273,8 +274,7 @@ body {
   .functionality__espace {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 26px;
+    justify-content: space-between;
   }
   .functionality__title {
     padding-bottom: 25px;
@@ -282,11 +282,26 @@ body {
   .restaurants__espace {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .restaurants__position {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 100px;
+  }
+  .restaurants article {
+    width: 50%;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+  .footer img {
+    padding-bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
