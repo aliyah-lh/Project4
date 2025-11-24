@@ -1,0 +1,81 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F3F3F3;
+}
+
+header {
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // icône à droite, logo à gauche
+    padding: 15px;
+
+    i {
+      width: 17.2px;
+      height: 16px;
+      font-size: 17px; // pour correspondre à la taille voulue
+      cursor: pointer;
+    }
+
+    img {
+      font-weight: 400;
+      width: auto;
+      height: 30px; // correspond à size 30px
+    }
+  }
+
+  // image du restaurant
+  > img {
+    width: 375px;
+    height: 275px;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #353535;
+
+  img {
+    width: 100px;
+    height: 27px;
+    filter: brightness(0) invert(1);
+    padding-bottom: 18px;
+  }
+
+  h2 {
+    margin: 7px 0;
+  }
+
+  .footer__link {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0;
+
+    i {
+      font-size: 16px;
+    }
+  }
+
+  .footer__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    padding-bottom: 7px;
+
+  }
+}

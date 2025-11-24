@@ -72,18 +72,22 @@ body {
   &__button {
     width: 218px;
     height: 50px;
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
-    border: none;
-    border-radius: 25px;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    color: #ffffff;
     font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+    background: linear-gradient(357deg, #9356DC, #FF79DA);
+    border-radius: 25px;
+    border: none;
+    font-weight: 500;
+    box-shadow: 0 4px 10px 0 #d5d5d5;
+    cursor: pointer;
+    margin: 27px 75px 57px 82px;
+    transition: opacity 300ms ease-in-out;
   }
+
+  &__button:hover {
+     opacity: 0.88;
+      box-shadow: 0 4px 10px 0 #afafaf;
+}
 
 }
 
@@ -160,7 +164,6 @@ body {
   padding: 54px 180px;
   display: flex;
   flex-direction: column;
-  width: 100%;
 
   &__espace {
     display: flex;
@@ -331,6 +334,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 100px;
+    width: 100%;
 }
 
 .restaurants article {
@@ -348,5 +352,9 @@ body {
 
   .footer img {
     padding-bottom: 0;
+  }
+
+  .footer .footer__text {
+    padding: 0;
   }
 }
