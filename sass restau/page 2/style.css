@@ -4,29 +4,36 @@ body {
   background-color: #F3F3F3;
 }
 
-header > div {
+.header {
+  width: 100%;
+  background-color: white;
+}
+.header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 18px 20px 17px 20px;
+  box-sizing: border-box;
 }
-header > div i {
+.header__logo {
+  font-weight: 400;
+  height: 30px;
+  width: auto;
+}
+.header__icon {
   width: 17.2px;
   height: 16px;
   font-size: 17px;
+  color: #000;
   cursor: pointer;
 }
-header > div img {
-  font-weight: 400;
-  width: auto;
-  height: 30px;
-}
-header > img {
+.header__img {
   width: 375px;
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  margin: 0 auto;
 }
 
 .footer {

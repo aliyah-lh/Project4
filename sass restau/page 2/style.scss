@@ -4,35 +4,41 @@ body {
   background-color: #F3F3F3;
 }
 
-header {
-  > div {
+.header {
+  width: 100%;
+  background-color: white;
+
+  &__top {
     display: flex;
     align-items: center;
-    justify-content: space-between; // icône à droite, logo à gauche
-    padding: 15px;
-
-    i {
-      width: 17.2px;
-      height: 16px;
-      font-size: 17px; // pour correspondre à la taille voulue
-      cursor: pointer;
-    }
-
-    img {
-      font-weight: 400;
-      width: auto;
-      height: 30px; // correspond à size 30px
-    }
+    justify-content: space-between; // logo à gauche / icône à droite
+    padding: 18px 20px 17px 20px;
+    box-sizing: border-box;
   }
 
-  // image du restaurant
-  > img {
+  &__logo {
+    font-weight: 400;
+    height: 30px; // size = 30px
+    width: auto; // pour garder les proportions
+  }
+
+  &__icon {
+    width: 17.2px;
+    height: 16px;
+    font-size: 17px; // pour correspondre
+    color: #000;
+    cursor: pointer;
+  }
+
+  &__img {
     width: 375px;
     height: 275px;
     object-fit: cover;
     display: block;
+    margin: 0 auto; // centré proprement
   }
 }
+
 
 
 .footer {
