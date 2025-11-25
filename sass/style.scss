@@ -92,7 +92,6 @@ body {
 }
 
 .functionality {
-  padding: 20px 180px;
   background-color: white;
   padding-bottom: 60px;
   display: flex;
@@ -110,6 +109,7 @@ body {
     font-size: 24px;
     color: #000;
     text-align: left;
+    padding-left: 20px;
   }
 
   &__button {
@@ -161,7 +161,6 @@ body {
 }
 
 .restaurants {
-  padding: 54px 180px;
   display: flex;
   flex-direction: column;
 
@@ -171,11 +170,18 @@ body {
     align-items: center;
   }
 
+  a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
   h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 20px;
+    padding-left: 20px;
   }
 
   .restaurants__new {
@@ -311,6 +317,9 @@ body {
     padding-bottom: 10px;
   }
 
+  .functionality {
+    padding: 20px 180px;
+  }
 
  .functionality__espace {
     display: flex;
@@ -321,6 +330,10 @@ body {
 
   .functionality__title {
     padding-bottom: 25px;
+  }
+
+  .restaurants {
+    padding: 54px 180px;
   }
 
   .restaurants__espace {
