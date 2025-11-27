@@ -1,4 +1,3 @@
-
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -96,5 +95,29 @@
     i:hover {
       color: #9356DC;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+   .restaurants {
+    padding: 54px 180px;
+  }
+
+  .restaurants__espace {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .restaurants__position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
+  }
+
+  .restaurants article {
+    width: 50%;
   }
 }
