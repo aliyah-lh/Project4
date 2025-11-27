@@ -2,21 +2,27 @@ body {
   padding: 0;
   margin: 0;
   background-color: #F3F3F3;
+
+  @import '../base/layouts/header';
+  @import '../base/layouts/footer';
+  @import '../components/button';
+  @import '../components/menu-restaurant';
 }
+
 .header {
   width: 100%;
   background-color: white;
 
   &__top {
-    position: relative; 
-    height: 60px; 
+    position: relative;
+    height: 60px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 
     .header__icon {
-      position: absolute; 
-      left: 20px; 
+      position: absolute;
+      left: 20px;
       width: 17.2px;
       height: 16px;
       font-size: 17px;
@@ -61,7 +67,7 @@ body {
     padding-bottom: 30px;
   }
 
-  
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -85,7 +91,7 @@ body {
     cursor: pointer;
   }
 
-  
+
   &__category {
     display: flex;
     flex-direction: column;
@@ -103,7 +109,7 @@ body {
     }
   }
 
-  
+
   &__underline {
     width: 40px;
     height: 0px;
@@ -123,14 +129,14 @@ body {
   }
 
   .menu__info h2 {
-  margin: 0;
-  font-size: 18px;
-}
+    margin: 0;
+    font-size: 18px;
+  }
 
-.menu__info p {
-  margin: 0;
-  font-size: 15px;
-}
+  .menu__info p {
+    margin: 0;
+    font-size: 15px;
+  }
 
   &__price h2 {
     margin: 0;
@@ -140,8 +146,8 @@ body {
 
 .menu__button-container {
   display: flex;
-  justify-content: center; // centre le bouton horizontalement
-  margin-top: 20px; // tu peux ajuster si besoin
+  justify-content: center;
+  margin-top: 20px; 
 }
 
 .menu__button {
@@ -163,54 +169,8 @@ body {
 
 
 
-.footer {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #353535;
-
-  img {
-    width: 100px;
-    height: 27px;
-    filter: brightness(0) invert(1);
-    padding-bottom: 18px;
-  }
-
-  h2 {
-    margin: 7px 0;
-  }
-
-  .footer__link {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    cursor: pointer;
-    margin: 0;
-
-    i {
-      font-size: 16px;
-    }
-  }
-
-  .footer__text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: white;
-    margin: 0;
-    padding-bottom: 7px;
-
-  }
-}
-
-
 @media (min-width: 1024px) {
-  
+
   .header__img {
     height: 383px;
   }
@@ -222,28 +182,10 @@ body {
   }
 
   .menu {
-  margin-left: 193px;
-  margin-right: 192px;
-  padding-left: 210px;
-  padding-right: 210px;
-  }
-
-  .footer {
-     display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-
-  .footer img {
-    padding-bottom: 0;
-  }
-
-  .footer .footer__text {
-    padding: 0;
+    margin-left: 193px;
+    margin-right: 192px;
+    padding-left: 210px;
+    padding-right: 210px;
   }
 
 }
-  
