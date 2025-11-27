@@ -97,3 +97,22 @@
     font-size: 15px;
   }
 }
+
+
+@media (min-width: 1024px) {
+
+
+  .menu__header {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .menu {
+    margin-left: 193px;
+    margin-right: 192px;
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+
+}
