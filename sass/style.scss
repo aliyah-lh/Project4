@@ -85,9 +85,9 @@ body {
   }
 
   &__button:hover {
-     opacity: 0.88;
-      box-shadow: 0 4px 10px 0 #afafaf;
-}
+    opacity: 0.88;
+    box-shadow: 0 4px 10px 0 #afafaf;
+  }
 
 }
 
@@ -97,7 +97,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  &__espace { 
+  &__espace {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,9 +152,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute; 
-    top: 50%; 
-    transform: translateY(-50%); 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     left: -12px;
   }
 
@@ -180,22 +180,22 @@ body {
   }
 
   .restaurants__new {
-  width: 80px;
-  height: 25px;
-  background-color: #99E2D0;
-  color: #008766;
-  border-radius: 2px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 13px;
-  right: 12px;
-  z-index: 10;
-}
+    width: 80px;
+    height: 25px;
+    background-color: #99E2D0;
+    color: #008766;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    z-index: 10;
+  }
 
 
   article {
@@ -205,6 +205,12 @@ body {
     overflow: hidden;
     margin-bottom: 25px;
     position: relative;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
 
     img {
       width: 100%;
@@ -301,7 +307,7 @@ body {
 
 
 @media (min-width: 1024px) {
- 
+
 
   .location {
     box-shadow: none;
@@ -316,7 +322,7 @@ body {
     padding: 20px 180px;
   }
 
- .functionality__espace {
+  .functionality__espace {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -343,14 +349,14 @@ body {
     justify-content: space-between;
     gap: 100px;
     width: 100%;
-}
+  }
 
-.restaurants article {
+  .restaurants article {
     width: 50%;
   }
 
   .footer {
-     display: flex;
+    display: flex;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: flex-start;
