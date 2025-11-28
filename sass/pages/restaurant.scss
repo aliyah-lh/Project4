@@ -1,13 +1,14 @@
+  @use '../base/layouts/footer';
+  @use '../components/button';
+  @use '../components/card-menu';
+  @use '../base/layouts/header';
+  @use '../sass/animation/like';
+
 body {
   padding: 0;
   margin: 0;
   background-color: #F3F3F3;
   }
-
-  @import '../base/layouts/footer';
-  @import '../components/button';
-  @import '../components/card-menu';
-  @import '../base/layouts/header';
   
 
  .hero__img {

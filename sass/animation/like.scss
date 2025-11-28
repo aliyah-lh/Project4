@@ -1,0 +1,37 @@
+&__heart {
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    &-empty,
+    &-full {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &-empty {
+      opacity: 1;
+    }
+
+    &-full {
+      opacity: 0;
+    }
+    
+  }
+
+  &__input:checked {
+    ~ .carte__heart-empty {
+      opacity: 0;
+    }
+
+    ~ .carte__heart-full {
+      opacity: 1;
+    }
+  }
