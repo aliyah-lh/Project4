@@ -223,6 +223,14 @@
   opacity: 1;
 }
 
+.carte__menu {
+  position: absolute;
+  right: 120px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
 .carte__input:checked ~ .carte__heart-empty {
   opacity: 0;
 }
