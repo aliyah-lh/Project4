@@ -20,8 +20,9 @@
     width: 100%;
     padding-bottom: 30px;
   }
-
-  
+  &__info {
+    padding: 15px;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -45,7 +46,7 @@
     cursor: pointer;
   }
 
-  
+
   &__category {
     display: flex;
     flex-direction: column;
@@ -72,14 +73,47 @@
   }
 
 
-  &__item {
+  .menu__item {
     background: white;
     border-radius: 15px;
-    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+      &:hover .menu__checkout {
+    margin-right: 0;
+  }
+
+  &:hover .menu__checkout::after {
+    transform: rotate(0deg);
+  }
+    .menu__checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 69px;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+
+  
+  margin-right: -80px;
+  transition: margin-right 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+
+.menu__checkout::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f058";
+  color: white;
+  font-size: 24px;
+
+  transform: rotate(360deg);
+  transition: transform 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+
   }
 
   .menu__info h2 {
