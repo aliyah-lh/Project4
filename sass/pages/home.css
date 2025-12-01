@@ -131,6 +131,11 @@
   font-size: 16px;
   margin: 5px 0 0 0;
 }
+.carte .restaurants__espace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* --- MEDIA DESKTOP --- */
 @media (min-width: 1024px) {
@@ -176,7 +181,8 @@
 
 .carte__heart {
   position: absolute;
-  right: 20px;
+  right: 0px;
+  left: 200px;
   top: 200px;
   width: 25px;
   height: 25px;
@@ -201,9 +207,9 @@
   opacity: 1;
 }
 
-.carte__menu {
+.menu__heart {
   position: absolute;
-  right: 120px;
+  right: 40px;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -216,6 +222,15 @@
   opacity: 1;
 }
 
+@media (min-width: 1024px) {
+  .menu__heart {
+    position: absolute;
+    right: 350px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+}
 body {
   padding: 0;
   margin: 0;
