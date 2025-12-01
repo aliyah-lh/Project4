@@ -1,3 +1,213 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  background-color: white;
+}
+.header__logo {
+  width: 162px;
+  height: 44px;
+}
+.header__icon {
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #353535;
+}
+.footer img {
+  width: 100px;
+  height: 27px;
+  filter: brightness(0) invert(1);
+  padding-bottom: 18px;
+}
+.footer h2 {
+  margin: 7px 0;
+}
+.footer .footer__link {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0;
+}
+.footer .footer__link i {
+  font-size: 16px;
+}
+.footer .footer__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+  .footer img {
+    padding-bottom: 0;
+  }
+  .footer .footer__text {
+    padding: 0;
+  }
+}
+.carte {
+  width: 340px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  position: relative;
+}
+.carte__link {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+.carte__image {
+  width: 100%;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.carte__label {
+  width: 80px;
+  height: 25px;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  z-index: 10;
+}
+.carte__content {
+  height: 77px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carte__content__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+.carte__content__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+/* --- MEDIA DESKTOP --- */
+@media (min-width: 1024px) {
+  .restaurants {
+    padding: 54px 180px;
+  }
+  .restaurants__espace {
+    width: 100%;
+  }
+  .restaurants__position {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
+  }
+  .restaurants .carte {
+    width: 50%;
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 218px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  cursor: pointer;
+  margin: 27px 75px 57px 82px;
+  transition: opacity 300ms ease-in-out;
+}
+.button:hover {
+  opacity: 0.88;
+  box-shadow: 0 4px 10px 0 #afafaf;
+}
+
+.carte__heart {
+  position: absolute;
+  right: 20px;
+  top: 200px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.carte__heart-full {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.carte__heart-empty {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.carte__input:checked ~ .carte__heart-empty {
+  opacity: 0;
+}
+.carte__input:checked ~ .carte__heart-full {
+  opacity: 1;
+}
+
 body {
   padding: 0;
   margin: 0;
