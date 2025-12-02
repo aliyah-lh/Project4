@@ -52,7 +52,7 @@
       text-transform: uppercase;
       margin: 0;
       color: #101010;
-      
+
     }
   }
 
@@ -72,14 +72,12 @@
     align-items: center;
     box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    cursor: pointer;
 
     &:hover .menu__checkout {
       margin-right: 0;
     }
 
-    &:hover .menu__checkout::after {
-      transform: rotate(0deg);
-    }
 
     .menu__item__info {
       padding-left: 15px;
@@ -88,6 +86,7 @@
     .menu__price {
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
 
     .menu__checkout {
@@ -99,17 +98,18 @@
       background-color: #99E2D0;
       border-radius: 0px 15px 15px 0px;
       margin-right: -60px;
-      transition: margin-right 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
-    }
-
-    .menu__checkout::after {
-      font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      content: "\f058";
       color: white;
       font-size: 24px;
-      transform: rotate(360deg);
-      transition: transform 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+      transition: margin-right 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92), transform 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+      position: relative;
+
+      &-icon {
+        color: white;
+        font-size: 28px;
+         transition: transform 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+
+      }
     }
 
   }
@@ -117,20 +117,32 @@
   .menu__item__info h2 {
     margin: 0;
     font-size: 18px;
-    
+
   }
 
   .menu__item__info p {
     margin: 0;
     font-size: 15px;
-    
+
   }
 
   &__price h2 {
     margin: 0;
     font-size: 15px;
-    padding-top: 35px;
+    padding-top: 20px;
+    padding-right: 15px;
   }
+}
+
+.menu__check:checked+.menu__item .menu__check {
+  transform: rotate(360deg);
+  margin-right: 0;
+}
+
+.menu__check:checked + .menu__item .menu__check .menu__checkout-icon {
+  transform: rotate(360deg);
+    transition: transform 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+
 }
 
 

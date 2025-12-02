@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: flex;
   justify-content: center;
@@ -62,17 +63,48 @@
 @media (min-width: 1024px) {
   .footer {
     display: flex;
+    flex-direction: row; /* on garde l’ordre normal */
     align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: flex-end; /* logo à droite */
     height: 114px;
-    gap: 16px;
+    gap: 40px;
   }
   .footer img {
     padding-bottom: 0;
   }
-  .footer .footer__text {
+  /* Conteneur global des liens */
+  .footer__links {
+    display: flex;
+    flex-direction: row; /* NE PAS inverser */
+    align-items: center;
+    gap: 50px; /* espace entre bloc icons et bloc textes */
+  }
+  /* Bloc des deux liens avec icônes (tout à gauche) */
+  .footer__links-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .footer__links-text {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  /* styles communs */
+  .footer__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+  }
+  .footer__link i {
+    font-size: 18px;
+  }
+  .footer__text {
     padding: 0;
+    font-size: 16px;
+    cursor: pointer;
   }
 }
 .carte {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer {
   padding: 20px;
   display: flex;
@@ -40,17 +41,48 @@
 @media (min-width: 1024px) {
   .footer {
     display: flex;
+    flex-direction: row; /* on garde l’ordre normal */
     align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: flex-end; /* logo à droite */
     height: 114px;
-    gap: 16px;
+    gap: 40px;
   }
   .footer img {
     padding-bottom: 0;
   }
-  .footer .footer__text {
+  /* Conteneur global des liens */
+  .footer__links {
+    display: flex;
+    flex-direction: row; /* NE PAS inverser */
+    align-items: center;
+    gap: 50px; /* espace entre bloc icons et bloc textes */
+  }
+  /* Bloc des deux liens avec icônes (tout à gauche) */
+  .footer__links-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .footer__links-text {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  /* styles communs */
+  .footer__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+  }
+  .footer__link i {
+    font-size: 18px;
+  }
+  .footer__text {
     padding: 0;
+    font-size: 16px;
+    cursor: pointer;
   }
 }
 .button-container {
@@ -140,12 +172,10 @@
   align-items: center;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  cursor: pointer;
 }
 .menu .menu__item:hover .menu__checkout {
   margin-right: 0;
-}
-.menu .menu__item:hover .menu__checkout::after {
-  transform: rotate(0deg);
 }
 .menu .menu__item .menu__item__info {
   padding-left: 15px;
@@ -153,6 +183,7 @@
 .menu .menu__item .menu__price {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .menu .menu__item .menu__checkout {
   display: flex;
@@ -163,15 +194,15 @@
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   margin-right: -60px;
-  transition: margin-right 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
-}
-.menu .menu__item .menu__checkout::after {
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f058";
   color: white;
   font-size: 24px;
-  transform: rotate(360deg);
+  transition: margin-right 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92), transform 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+  position: relative;
+}
+.menu .menu__item .menu__checkout-icon {
+  color: white;
+  font-size: 28px;
   transition: transform 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 }
 .menu .menu__item__info h2 {
@@ -185,7 +216,18 @@
 .menu__price h2 {
   margin: 0;
   font-size: 15px;
-  padding-top: 35px;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+.menu__check:checked + .menu__item .menu__check {
+  transform: rotate(360deg);
+  margin-right: 0;
+}
+
+.menu__check:checked + .menu__item .menu__check .menu__checkout-icon {
+  transform: rotate(360deg);
+  transition: transform 600ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 }
 
 @media (min-width: 1024px) {
