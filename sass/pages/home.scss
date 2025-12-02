@@ -1,8 +1,8 @@
 @use '../base/layouts/header';
-@use '../base/layouts/footer';
 @use '../components/card-restaurant';
 @use '../components/button';
 @use '../animation/like';
+@use '../base/layouts/footer';
 
 body {
     padding: 0;
@@ -179,22 +179,5 @@ body {
 
     .restaurants article {
         width: 50%;
-    }
-
-    .footer {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
-        height: 114px;
-        gap: 16px;
-    }
-
-    .footer img {
-        padding-bottom: 0;
-    }
-
-    .footer .footer__text {
-        padding: 0;
     }
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header {
   display: flex;
   justify-content: center;
@@ -21,92 +20,6 @@
   left: 20px;
 }
 
-.footer {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #353535;
-}
-.footer img {
-  width: 100px;
-  height: 27px;
-  filter: brightness(0) invert(1);
-  padding-bottom: 18px;
-}
-.footer h2 {
-  margin: 7px 0;
-}
-.footer .footer__link {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  cursor: pointer;
-  margin: 0;
-}
-.footer .footer__link i {
-  font-size: 16px;
-}
-.footer .footer__text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: white;
-  margin: 0;
-  padding-bottom: 7px;
-}
-
-@media (min-width: 1024px) {
-  .footer {
-    display: flex;
-    flex-direction: row; /* on garde l’ordre normal */
-    align-items: center;
-    justify-content: flex-end; /* logo à droite */
-    height: 114px;
-    gap: 40px;
-  }
-  .footer img {
-    padding-bottom: 0;
-  }
-  /* Conteneur global des liens */
-  .footer__links {
-    display: flex;
-    flex-direction: row; /* NE PAS inverser */
-    align-items: center;
-    gap: 50px; /* espace entre bloc icons et bloc textes */
-  }
-  /* Bloc des deux liens avec icônes (tout à gauche) */
-  .footer__links-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  .footer__links-text {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  /* styles communs */
-  .footer__link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    font-size: 14px;
-  }
-  .footer__link i {
-    font-size: 18px;
-  }
-  .footer__text {
-    padding: 0;
-    font-size: 16px;
-    cursor: pointer;
-  }
-}
 .carte {
   width: 340px;
   background-color: #FFFFFF;
@@ -259,8 +172,7 @@
 }
 
 .menu__heart {
-  position: absolute;
-  right: 40px;
+  position: relative;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -275,10 +187,93 @@
 
 @media (min-width: 1024px) {
   .menu__heart {
-    position: absolute;
-    right: 480px;
+    position: relative;
     width: 25px;
     height: 25px;
+    cursor: pointer;
+  }
+}
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #353535;
+}
+.footer img {
+  width: 100px;
+  height: 27px;
+  filter: brightness(0) invert(1);
+  padding-bottom: 18px;
+}
+.footer h2 {
+  margin: 7px 0;
+}
+.footer .footer__link {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0;
+}
+.footer .footer__link i {
+  font-size: 16px;
+}
+.footer .footer__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 114px;
+    gap: 40px;
+  }
+  .footer img {
+    order: 2;
+    padding-bottom: 0;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer__links .footer__links-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .footer__links .footer__links-text {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .footer__links .footer__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+  }
+  .footer__links .footer__link i {
+    font-size: 18px;
+  }
+  .footer__links .footer__text {
+    padding: 0;
+    font-size: 16px;
     cursor: pointer;
   }
 }
@@ -430,19 +425,5 @@ body {
   }
   .restaurants article {
     width: 50%;
-  }
-  .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-  .footer img {
-    padding-bottom: 0;
-  }
-  .footer .footer__text {
-    padding: 0;
   }
 }

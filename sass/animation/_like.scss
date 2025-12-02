@@ -29,8 +29,7 @@
     
   }
   .menu__heart {
-    position: absolute;
-    right: 40px;
+    position: relative;
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -49,8 +48,7 @@
 
   @media (min-width: 1024px) {
     .menu__heart {
-    position: absolute;
-    right: 480px;
+    position: relative;
     width: 25px;
     height: 25px;
     cursor: pointer;

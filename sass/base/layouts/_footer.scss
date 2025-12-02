@@ -56,7 +56,9 @@
   }
 
   .footer img {
+    order: 2;
     padding-bottom: 0;
+
   }
 
   
@@ -65,9 +67,9 @@
     flex-direction: row;  
     align-items: center;
     gap: 50px;            
-  }
+  
 
-  /
+  
   .footer__links-icons {
     display: flex;
     flex-direction: row;
@@ -81,7 +83,7 @@
     gap: 30px;
   }
 
-  /
+  
   .footer__link {
     display: flex;
     align-items: center;
@@ -100,4 +102,5 @@
     cursor: pointer;
   }
 
+}
 }
