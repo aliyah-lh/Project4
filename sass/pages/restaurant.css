@@ -178,13 +178,14 @@
   margin: 0;
   font-size: 18px;
 }
-.menu .menu___item_info p {
+.menu .menu__item__info p {
   margin: 0;
   font-size: 15px;
 }
 .menu__price h2 {
   margin: 0;
   font-size: 15px;
+  padding-top: 35px;
 }
 
 @media (min-width: 1024px) {
