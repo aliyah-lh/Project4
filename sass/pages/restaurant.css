@@ -148,7 +148,7 @@
   transform: rotate(0deg);
 }
 .menu .menu__item .menu__item__info {
-  padding: 0px;
+  padding-left: 15px;
 }
 .menu .menu__item .menu__price {
   display: flex;
