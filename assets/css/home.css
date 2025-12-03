@@ -331,7 +331,7 @@ body {
   background-color: #F3F3F3;
 }
 body .loader {
-  animation: fadeOut 0.5s 3s forwards;
+  animation: fadeOut 1ms 3s forwards;
 }
 
 @keyframes fadeOut {
