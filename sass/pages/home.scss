@@ -145,7 +145,12 @@ body {
     }
 
     .functionality {
-        padding: 20px 180px;
+        padding-left: 11%;
+        padding-right: 11%;
+
+        &__button {
+            width: 30%;
+        }
     }
 
     .functionality__espace {
