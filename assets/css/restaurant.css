@@ -143,6 +143,12 @@
 .menu .menu__item__info h2 {
   margin: 0;
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 520;
+  line-height: 100%;
+  font-size: 18px;
+  letter-spacing: 0%;
+  padding-bottom: 10px;
 }
 .menu .menu__item__info p {
   margin: 0;
